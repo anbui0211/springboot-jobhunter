@@ -56,7 +56,7 @@ public class UserController {
 
     // Get all users
     @GetMapping("")
-    public ResponseEntity<List<User>> getMethodName() {
+    public ResponseEntity<List<User>> getAllUser() {
         List<User> users = this.userService.getAllUser();
         return ResponseEntity.ok(users);
     }

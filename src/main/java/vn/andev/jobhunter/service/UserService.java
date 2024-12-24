@@ -34,6 +34,7 @@ public class UserService {
 
     public List<User> getAllUser() {
         return this.userRepository.findAll();
+
     }
 
     public User updateUser(long id, User reqBody) {
